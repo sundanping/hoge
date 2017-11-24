@@ -1,0 +1,98 @@
+
+.fade-enter-active, .fade-leave-active
+  transition all .2s ease
+.fade-enter, .fade-leave-active
+  opacity 0
+  
+.zoom-in-enter-active
+.zoom-in-leave-active
+  transition all .5s .2s ease-out
+.zoom-in-enter
+.zoom-in-leave-active
+  opacity 0
+  transform scale(.1)
+  
+.slide-left-delay-enter-active
+.slide-left-delay-leave-active
+.slide-right-delay-enter-active
+.slide-right-delay-leave-active
+  transition all .5s .5s ease-out
+.slide-left-delay-enter
+.slide-left-delay-leave-active
+  opacity 0
+  transform translate(30px, 0)
+.slide-right-delay-enter
+.slide-right-delay-leave-active
+  opacity 0
+  transform translate(-30px, 0)
+  
+.slide-up-enter-active
+.slide-up-leave-active
+.slide-down-enter-active
+.slide-down-leave-active
+  transition .5s ease-out
+.slide-up-enter
+.slide-up-leave-active
+  opacity 0
+  transform translateY(15px)
+.slide-down-enter
+.slide-down-leave-active
+  opacity 0
+  transform translateY(-15px)
+
+.slide-left-enter-active
+.slide-left-leave-active
+.slide-right-enter-active
+.slide-right-leave-active
+  transition .5s ease-out
+.slide-left-enter
+.slide-left-leave-active
+.slide-right-enter
+.slide-right-leave-active
+  opacity 0
+.slide-left-enter
+  transform translateX(30px)
+.slide-left-leave-active
+  transform translateX(-30px)
+.slide-right-enter
+  transform translateX(-30px)
+.slide-right-leave-active
+  transform translateX(30px)
+  
+@keyframes leave-left
+  from
+    opacity 1
+    transform translateX(0px)
+  to
+    opacity 0
+    transform translateX(-30px)
+@keyframes leave-right
+  from
+    opacity 1
+    transform translateX(0px)
+  to
+    opacity 0
+    transform translateX(30px)
+@keyframes enter-right
+  from
+    opacity 0
+    transform translateX(30px)
+  to
+    opacity 1
+    transform translateX(0px)
+@keyframes enter-left
+  from
+    opacity 0
+    transform translateX(-30px)
+  to
+    opacity 1
+    transform translateX(0px)
+
+.rotate-infinite
+  animation rotate-infinite 1s linear infinite
+@keyframes rotate-infinite
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(360deg)
+    

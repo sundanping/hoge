@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+dist/
+mobile/
+npm-debug.log
+.idea
+*.iml
+*.zip
+index_2017.html
+src_backup

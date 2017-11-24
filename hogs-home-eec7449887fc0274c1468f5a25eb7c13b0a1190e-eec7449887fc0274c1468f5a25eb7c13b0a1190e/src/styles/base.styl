@@ -1,0 +1,136 @@
+
+html
+  font-size 20px
+body
+  font 20px/1.5 PingFang SC, Helvetica Neue, Helvetica, Lantinghei SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif
+  background-color #fff
+  margin 0
+  color #333
+  overflow-y scroll
+img
+  border 0 none
+a
+  color #333
+  text-decoration none
+  &:hover
+    color #2a97e0
+    
+.container
+  width 1200px
+  margin 0 auto
+  position relative
+  &:after
+    content ''
+    display block
+    height 0
+    clear both
+  .headline
+    text-align center
+    margin-bottom 2rem
+    position relative
+    z-index 2
+    line-height 1.8
+    h2
+      color #999
+      font-size 1.25rem
+      font-weight 400
+      margin 0 0 .2rem
+    h3
+      display inline-block
+      font-size 1.5rem
+      font-weight 400
+      margin 0 auto .8rem
+    &:after
+      content ''
+      display block
+      width 3rem
+      height .2rem
+      margin 1rem auto
+      background-color #f7c231
+  .headline-brief p
+    text-align center
+    color #999
+        
+.top-alert
+  text-align center
+  line-height 30px
+  font-size 14px
+  background #ffffa9
+  position fixed
+  z-index 1000
+  width 100%
+  a
+    color #28688c
+  
+@media (max-width: 1200px)
+  .container
+    width 100%!important
+    overflow hidden
+    
+// layout
+.float-left
+  float left
+.float-right
+  float right
+.block-center
+  margin-left auto!important
+  margin-right auto!important
+
+// text
+.text-color-red
+  color #fe0e0e
+.text-color-white
+  color #fff
+.text-color-lter
+  color #eee
+.text-color-lt
+  color #ccc
+.text-color-silver
+  color #aaa
+.text-color-muted
+  color #999
+.text-color-gray
+  color #666
+.text-color-normal
+  color #333
+.text-color-dk
+  color #222
+.text-color-dker
+  color #111
+.text-color-black
+  color #000
+.text-align-center
+  text-align center
+.text-align-left
+  text-align left
+.text-align-right
+  text-align right
+.text-indent-paragraph
+  text-indent 2em
+
+
+// background
+.light-bg
+  background-color #f9f9f9
+  
+
+.transform-rotate-90
+  transform rotate(90deg)
+.transform-rotate--90
+  transform rotate(-90deg)
+  
+
+
+@font-face
+  font-family "iconfont"
+  src url('//at.alicdn.com/t/font_9huav4ws9m12lnmi.eot?t=1494781664931')
+  src url('//at.alicdn.com/t/font_9huav4ws9m12lnmi.eot?t=1494781664931#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_9huav4ws9m12lnmi.woff?t=1494781664931') format('woff'),
+  url('//at.alicdn.com/t/font_9huav4ws9m12lnmi.ttf?t=1494781664931') format('truetype'),
+  url('//at.alicdn.com/t/font_9huav4ws9m12lnmi.svg?t=1494781664931#iconfont') format('svg')
+.iconfont
+  font-family "iconfont" !important
+  font-size 16px
+  font-style normal
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
